@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.presentation{
+	margin-top: 5vh;
+}
+
+body{
+	background-color: #b2dfdb;
+}
+
+h3{
+	margin: 2%;	
+}
+
+
+.patienter{
+	margin: 0 43%;
+}
+
+
+::placeholder{
+	color: #26a69a;
+	opacity: 0.6;
+}
+
+
+
+@media screen and (max-width:992px){
+	.presentation{
+		margin-top: 3vh;
+	}
+	
+}
+
+.doc {
+	margin: 10px 10%;
+}

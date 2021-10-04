@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pouvoir des nombres</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper teal lighten-1">
+      	<a href="#" class="brand-logo center">Le pouvoir des nombres</a>
+    </div>
+</nav>
+<a href="./out/index.html" target="_blank" class="waves-effect waves-light btn doc"><i class="material-icons left">description</i>Documentation</a>	
+<div class="row presentation">
+	
+	<!------------------ PARTIE NOMBRE ----------------------------->
+	<div class="col m6 l4">
+		<div class="card sticky-action">
+    		<div class="card-image waves-effect waves-block waves-light">
+      			<img class="activator" src="styles/img/digits-4014181_1920.jpg" alt="Une photo de chiffres">
+   			</div>
+    		<div class="card-content">
+      			<span class="card-title activator grey-text text-darken-4">Un nombre = une info<i class="material-icons right">more_vert</i></span>
+    		</div>
+			<div class="card-action">
+				<div class="row">
+					<input class="form-control me-2" type="search" placeholder="Entrez un nombre" aria-label="Search" id="search-bar">
+				</div>
+				<a class="waves-effect waves-light btn" id="validerNombre"><i class="material-icons left">done</i>valider</a>
+				<a class="waves-effect waves-light btn right" id="hasardNombre"><i class="material-icons left">casino</i>hasard</a>
+			</div>
+			<div class="card-action">
+					<div id="number-pres"></div>
+			</div>
+    		<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Le principe<i class="material-icons right">close</i></span>
+      			<p>Entrer un numéro dans le formulaire et cliquer sur valider !!! <br>Vous n'avez pas d'idée? Laissez le hasard décidé en cliquant sur le bouton hasard</p>
+    		</div>
+		</div>
+	</div>
+	
+	<!--------------------- PARTIE DATE ---------------------------->
+	<div class="col m6 l4">
+		<div class="card sticky-action">
+    		<div class="card-image waves-effect waves-block waves-light">
+      			<img class="activator" src="styles/img/calendar-1990453_1920.jpg" alt="une photo d'un calendrier">
+   			</div>
+    		<div class="card-content">
+      			<span class="card-title activator grey-text text-darken-4">Une date = une info<i class="material-icons right">more_vert</i></span>
+    		</div>
+			<div class="card-action">
+				<div class="row">
+					<div class="col m6">
+						<input type="number" id="day" name="day" min="1" max="31" placeholder="Jour">
+					</div>
+					<div class="col m6">
+						<input type="number" id="month" name="month" min="1" max="12" placeholder="Mois">
+					</div>
+				</div>
+				<a class="waves-effect waves-light btn" id="validerDate"><i class="material-icons left">done</i>valider</a>
+				<a class="waves-effect waves-light btn right" id="hasardDate"><i class="material-icons left">casino</i>hasard</a>
+			</div>
+			<div class="card-action">
+				<div id="date-pres"></div>
+			</div>
+    		<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Le principe<i class="material-icons right">close</i></span>
+      			<p>Entrer une date avec un jour et un mois dans le formulaire et cliquer sur valider !!! <br>Vous n'avez pas d'idée? Laissez le hasard décidé en cliquant sur le bouton hasard</p>
+    		</div>
+		</div>
+	</div>
+	
+	<!------------------ PARTIE ANNÉE --------------------------->
+	<div class="col m6 l4">
+		<div class="card sticky-action">
+    		<div class="card-image waves-effect waves-block waves-light">
+      			<img class="activator" src="styles/img/old-man-2803645_1920.jpg" alt="Image correspondant au temps qui passe">
+   			</div>
+    		<div class="card-content">
+      			<span class="card-title activator grey-text text-darken-4">Une année = une info<i class="material-icons right">more_vert</i></span>
+    		</div>
+			<div class="card-action">
+				<div class="row">
+					<input class="form-control me-2" type="search" placeholder="Entrez une année" aria-label="Search" id="search-year">
+				</div>
+				<a class="waves-effect waves-light btn" id="validerYear"><i class="material-icons left">done</i>valider</a>
+				<a class="waves-effect waves-light btn right" id="hasardYear"><i class="material-icons left">casino</i>hasard</a>
+			</div>
+			<div class="card-action">
+				<div id="year-pres"></div>
+			</div>
+    		<div class="card-reveal">
+      			<span class="card-title grey-text text-darken-4">Le principe<i class="material-icons right">close</i></span>
+      			<p>Entrer une année dans le formulaire et cliquer sur valider !!! <br>Vous n'avez pas d'idée? Laissez le hasard décidé en cliquant sur le bouton hasard</p>
+    		</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="js/Script.js"></script>
+</html>
